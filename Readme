@@ -28,7 +28,7 @@ Much more…
 # Summary
 A quick explanation of all the components of our setup and the authentication flow
 
-We set up our project using springdataJPA, OAuth2 Resource Server, postgres driver, and spring web.
+We set up our project using springdataJPA, OAuth2 Resource Server, mysql driver, and spring web.
 We created our user package, auth package, and config package.
 We created public-keys and private-keys using OpenSSL for encrypting and decrypting JWTs and linked it to our application through the applicationConfig.yaml and setting up properties.
 we created a user entity and a user repository for making JPA database calls.
@@ -37,3 +37,6 @@ we created a JpaUserDetailsService for managing user details at sign-in, authSer
 We created a DTO to help us manage data transfers between the client and server request and response.
 We used created an authController to manage routes for authentication requests like login.
 Then we setup our Security configurations to used Nimbus to manage JWTs and also user our UserDetailsService to manage user details on signin.
+
+LEARNED FROM THIS TUTORIAL, ARTICLE
+https://dev.to/pryhmez/implementing-spring-security-6-with-spring-boot-3-a-guide-to-oauth-and-jwt-with-nimbus-for-authentication-2lhf
