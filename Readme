@@ -1,0 +1,16 @@
+First create database on your localhost. Add correct username and password for your database.
+
+Here in this example I'm using "Mysql", but you can for example also use "Postgresql"
+
+After that you can launch application.
+
+How to test it ?
+For example with "Postman", "Bruno"
+
+"POST", "http://localhost:8000/api/auth/login" ,
+"Body: JSON
+    {
+         "username": "exampleuser",
+         "password": "examplepassword"
+    }
+"
