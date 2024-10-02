@@ -14,3 +14,26 @@ For example with "Postman", "Bruno"
          "password": "examplepassword"
     }
 "
+
+# Spring Security is a framework that focuses on providing both authentication and authorization to Java applications.
+
+Some of the features of spring security include
+
+Comprehensive and extensible support for both Authentication and Authorization
+Protection against attacks like session fixation, clickjacking, cross-site request forgery, etc
+Servlet API integration
+Optional integration with Spring Web MVC
+Much more…
+
+# Summary
+A quick explanation of all the components of our setup and the authentication flow
+
+We set up our project using springdataJPA, OAuth2 Resource Server, postgres driver, and spring web.
+We created our user package, auth package, and config package.
+We created public-keys and private-keys using OpenSSL for encrypting and decrypting JWTs and linked it to our application through the applicationConfig.yaml and setting up properties.
+we created a user entity and a user repository for making JPA database calls.
+we created an auth user that would manage roles, credentials, etc.
+we created a JpaUserDetailsService for managing user details at sign-in, authService for managing auth logic like generating tokens.
+We created a DTO to help us manage data transfers between the client and server request and response.
+We used created an authController to manage routes for authentication requests like login.
+Then we setup our Security configurations to used Nimbus to manage JWTs and also user our UserDetailsService to manage user details on signin.
